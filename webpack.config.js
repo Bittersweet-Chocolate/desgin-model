@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-04-12 20:02:46
+ * @LastEditTime: 2021-05-17 10:47:03
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \desgin-model\webpack.config.js
+ */
 const {resolve} = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
@@ -21,7 +29,7 @@ module.exports = {
     module: {
         rules: [{
             test: /\.js?$/,
-            exclude: /(node_modules)/,
+            exclude: /node_modules/,
             loader: 'babel-loader'
         }]
     }
